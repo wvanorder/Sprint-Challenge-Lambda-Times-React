@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import moment from 'moment';
 
 
 
@@ -53,7 +54,7 @@ flex: 1;
 const Header = () => {
   return (
     <Headerz>
-      <Date>SMARCH 32, 2018</Date>
+      <Date>{moment().format("MMM Do YY")}</Date>
       <h1>Lambda Times</h1>
       <Temp>98°</Temp>
     </Headerz>
